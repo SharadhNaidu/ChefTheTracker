@@ -7,7 +7,8 @@ from datetime import datetime
 import asyncio
 import aiohttp
 from flask import Flask
-# Bot configuration
+
+
 TOKEN = 'DISCORD TOKEN'
 CHANNEL_ID = 'CHANNEL_ID'  # Channel where leaderboard will be posted
 DATABASE_NAME = 'leaderboard.db'
@@ -119,7 +120,7 @@ async def show_leaderboard(ctx):
         await ctx.send("No users are currently being tracked!")
         return
 
-    leaderboard = "🏆 **CodeChef Leaderboard** 🏆\n\n"
+    leaderboard = "🏆 **CodeChef Leaderboards** 🏆\n\n"
     for i, (username, solved) in enumerate(users, 1):
         medal = "🥇" if i == 1 else "🥈" if i == 2 else "🥉" if i == 3 else "👤"
         leaderboard += f"{medal} {i}. {username}: {solved} problems\n"
