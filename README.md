@@ -36,5 +36,10 @@ Run the Python scripts to apply camera color corrections.
 ## Contributing
 Feel free to contribute improvements and bug fixes!
 
+## Recent Updates
+- Added comprehensive camera color fixing functionality
+- Integrated OpenCV solutions for camera issues
+- Enhanced project documentation
+
 ## License
 Open source - feel free to use and modify.
